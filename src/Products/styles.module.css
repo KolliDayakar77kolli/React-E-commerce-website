@@ -1,0 +1,150 @@
+*{
+    overflow-x:hidden;
+}
+
+.cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.card{
+    width: calc(20% - -20px );
+    background-color: #f6f6f6;
+    margin: 10px auto;
+    text-align: center;
+    height: 380px;
+    overflow-y: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.cardImage{
+    width: 75%;
+    height: 150px;
+    margin: 25px auto;
+    box-shadow:2px 3px 2px gray
+}
+.cardDescWrapper{
+    text-align: start;
+    padding: 0 35px;
+    transform: translateY(-40px);
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+}
+.descp{
+    font-size: 13px;
+    text-overflow: ellipsis;
+    transform: translateY(-22px);
+    height: 35px;
+    /* overflow-y: hidden; */
+}
+.rating{
+    background-color: green;
+    width: 25%;
+    transform: translateY(-27px);
+    color: white;
+    border-radius: 5px;
+}
+.cartBtn{
+    border-radius: 20px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.lvWrp{
+    transform: translateY(-30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (min-device-width: 360px)  and (orientation: portrait) {
+    .card{
+        width: calc(50% - 3.8px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width:max-content;
+    }
+    .cartBtn{
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-device-width: 480px)  and (orientation: portrait) {
+    .card{
+        width: calc(50% - 3.8px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width:max-content;
+    }
+    .cartBtn{
+        margin-right: 5px;
+    }
+
+}
+
+
+@media screen and (max-device-width: 700px) and (orientation: landscape)  {
+    .card{
+        width: calc(25% - -40px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width:max-content;
+    }
+    .cartBtn{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-device-width: 640px)   {
+    .card{
+        width: calc(50% - 3.8px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width:max-content;
+    }
+    .cartBtn{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-device-width: 701px)   {
+    .card{
+        width: calc(25% - 10px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width:max-content;
+    }
+    .cartBtn{
+        margin-right: 5px;
+    }
+}
+@media screen and (min-device-width: 900px)   {
+    .card{
+        width: calc(25% - 10px);
+    }
+    .rating{
+        width: fit-content;
+    }
+    .lvWrp{
+       width: auto;
+    }
+}

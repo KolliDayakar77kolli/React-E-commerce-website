@@ -1,0 +1,22 @@
+header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.6) url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode:overlay;
+    position:fixed;
+    z-index: 1;
+}
+header > a{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+}
+header > a:last-of-type{
+    cursor: pointer;
+}
